@@ -1,0 +1,287 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat+Alternates:ital,wght@0,400;0,500;1,300&family=Open+Sans:ital,wght@0,500;0,600;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Tektur:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: rgb(89, 255, 47);
+    --secondary-color: rgb(108, 117, 107);
+    --background-color: rgb(83, 88, 83);
+}
+textarea{
+    resize: none;
+}
+div.landpge{
+    height: 100vh;
+    width: 100%;
+    overflow-X: hidden;
+
+}
+nav.navbar span.image{
+    display: none;
+}
+nav.navbar{
+    position: fixed;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    z-index: 1;
+}
+nav.navbar div.navlinks a{
+    text-decoration: none;
+    color: white;
+    background-color:  var(--background-color);
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 0px 4px;
+}
+nav.navbar div.navlinks a:last-child{
+    background-color: rgb(89, 255, 47);
+    color: var(--background-color);
+    font-size: 14px;
+}
+nav.navbar div.navlinks a:last-child:hover{
+    color: rgb(54, 54, 54);
+}
+nav.navbar div.navlinks a:hover{
+    box-sizing: border-box;
+    color: greenyellow;
+    border: 1px solid white;
+    padding: 4px 7px;
+    box-shadow: 0px 0px 3px white;
+}
+nav.navbar div.navlinks a.active{
+    box-sizing: border-box;
+    color: greenyellow;
+    border: 1px solid white;
+    padding: 4px 7px;
+    box-shadow: 0px 0px 3px white;
+}
+nav.navbar span:last-child{
+    display: none;
+}
+nav.navbar span.profileName{
+    font-size: 30px;
+    font-family: Tektur;
+    color:rgb(53, 253, 3);
+    font-weight: 800;
+    padding-left: 3rem;
+}
+div.landpge section{
+    padding: 0px 1rem;
+    width: 100%;
+
+}
+div.landpge section main{
+    display: flex;
+}
+div.getintouch a{
+    text-decoration: none;
+    color: rgb(89, 255, 47);
+    border: 2px solid rgb(89, 255, 47);
+    background-color:  rgb(83, 88, 83);
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 22px;
+
+}
+div.getintouch a:hover{
+    text-shadow: 0px 0px 1px white;
+    box-shadow: 0px 0px 5px rgb(53, 253, 3);
+}
+section main div.description{
+    position: relative;
+    top: 9rem;
+    left: 3rem;
+    padding: 3rem;
+    height: 70vh;
+    width: 100%;
+}
+section main div.description h1{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: Roboto;
+    color: rgb(80, 79, 79);
+}
+section main div.description h2{
+    font-family: Tektur;
+    font-size: 40px;
+    color: rgb(23, 24, 23);
+    margin: 20px 0px;
+}
+section main div.description div.getintouch{
+    position: absolute;
+    bottom: 3rem;
+}
+section main div.image img{
+    position: absolute;
+    bottom: 0px;
+    right: 7rem;
+    width: 26rem;
+    z-index: -1;
+}
+div.projects{
+    overflow-X: hidden;
+    height: 80vh;
+    width: 100%;
+    background-color: rgb(80, 79, 79);
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    color: white;
+    font-family: Roboto;
+}
+div.projects div.projectImages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 80%;
+    height: 40vh;
+    transform: translateY(-40px);
+    overflow-x: hidden;
+}
+div.projects span{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin-top: 6rem;
+    font-size: 2rem;
+    color: rgb(89, 255, 47);
+    text-shadow: 0px 0px 3px white;
+}
+div.projects h1{
+    position: relative;
+    top: 1rem;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 3px rgb(89, 255, 47);
+}
+div.projects div.projectImages a img{
+    width: 15rem;
+    height: 12rem;
+    display: flex;
+    margin: 0px 10px;
+    border: 2px solid rgb(89, 255, 47);
+    box-shadow: 0px 0px 3px white;
+}
+div.about{
+    position: relative;
+    height: 80vh;
+    padding: 3rem 6rem;
+
+}
+div.about h1{
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--background-color);
+    text-shadow: 0px 0px 3px var(--primary-color);
+    
+}
+div.about div.getintouch{
+    position: absolute;
+    bottom: 3rem;
+}
+div.contacts{
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    border-radius: 8px;
+    align-self: center;
+    padding: 3rem ;
+    background-color: rgb(234, 238, 235);
+}
+div.contacts h1{
+    text-align: center;
+    padding: 3rem;
+}
+div.contacts p{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+div.contacts .contactForm{
+    position: relative;
+    padding: 0px 3rem;
+    margin-top: 1rem;
+}
+div.contactForm .form{
+    display: flex;
+    padding: 0px 2rem;
+    height: 35vh;
+ }
+div.inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: self-start;
+    width: 50%;
+    height: 60%;
+    margin-top: 5px;
+}
+div.inp input{
+    border-radius: 3px;
+    width: 90%;
+    height: 3rem;
+    padding: 0px 6px;
+    border-radius: 5px;
+}
+div.inp input:focus{
+    outline: none;
+    border: 2px solid rgb(53, 253, 3);
+}
+div.msg{
+    position: relative;
+    width: 40%;
+    height: 100%;
+}
+div.msg textarea{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(53, 253, 3);
+    padding: 8px; 
+    font-size: 14px;
+    border-radius: 5px;
+}
+div.msg textarea:focus{
+    outline: none;
+    border: 2px solid rgb(53, 253, 3);
+}
+div.form .msginputs, input{
+    border: 2px solid #ccc;
+    box-shadow: 0px 0px 3px white;
+    font-size: 16px;
+    font-family: poppins;
+    color:rgb(54, 54, 54);
+}
+div.contactForm div.getintouch{
+    position: absolute;
+    bottom: 1rem;
+    left: 5rem;
+    width: 70%;
+}
+div.contactForm div.getintouch a{
+    font-size: 18px;
+    padding: 8px 15px;
+}
+div.form div#msginputs:focus{
+    outline: none;
+}
+div.footer{
+    width: 100%;
+    height: 20vh;
+    background-color:  var(--background-color);
+}
