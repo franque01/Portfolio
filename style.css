@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat+Alternates:ital,wght@0,400;0,500;1,300&family=Open+Sans:ital,wght@0,500;0,600;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Tektur:wght@400;600&display=swap');
 *{
     box-sizing: border-box;
@@ -19,15 +18,14 @@ div.landpge{
     height: 100vh;
     width: 100%;
     overflow-X: hidden;
-
 }
-nav.navbar span.image{
+nav.navbar .profpix span.profimage{
     display: none;
 }
 nav.navbar{
     position: fixed;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,13 +34,25 @@ nav.navbar{
     color: white;
     z-index: 1;
 }
+nav.navbar{
+    padding-right: 3rem;
+}
+nav.navbar .profpix .profileName{
+    font-size: 30px;
+    font-family: Tektur;
+    color:rgb(53, 253, 3);
+    font-weight: 800;
+    margin-left: 3rem;
+    display: inline-block;
+    top: 0;
+}
 nav.navbar div.navlinks a{
     text-decoration: none;
     color: white;
     background-color:  var(--background-color);
     padding: 5px 8px;
     border-radius: 8px;
-    margin: 0px 4px;
+    margin: 0px 6px;
 }
 nav.navbar div.navlinks a:last-child{
     background-color: rgb(89, 255, 47);
@@ -69,21 +79,7 @@ nav.navbar div.navlinks a.active{
 nav.navbar span:last-child{
     display: none;
 }
-nav.navbar span.profileName{
-    font-size: 30px;
-    font-family: Tektur;
-    color:rgb(53, 253, 3);
-    font-weight: 800;
-    padding-left: 3rem;
-}
-div.landpge section{
-    padding: 0px 1rem;
-    width: 100%;
 
-}
-div.landpge section main{
-    display: flex;
-}
 div.getintouch a{
     text-decoration: none;
     color: rgb(89, 255, 47);
@@ -103,9 +99,10 @@ section main div.description{
     top: 9rem;
     left: 3rem;
     padding: 3rem;
-    height: 70vh;
+    min-height: 60vh;
     width: 100%;
 }
+
 section main div.description h1{
     font-size: 55px;
     font-weight: 700;
@@ -120,9 +117,10 @@ section main div.description h2{
 }
 section main div.description div.getintouch{
     position: absolute;
-    bottom: 3rem;
+    bottom: 0rem;
+
 }
-section main div.image img{
+section.banner main div.image img{
     position: absolute;
     bottom: 0px;
     right: 7rem;
@@ -130,6 +128,7 @@ section main div.image img{
     z-index: -1;
 }
 div.projects{
+    position: relative;
     overflow-X: hidden;
     height: 80vh;
     width: 100%;
@@ -285,3 +284,90 @@ div.footer{
     height: 20vh;
     background-color:  var(--background-color);
 }
+
+@media (max-width: 1012px ){
+    section.banner main div.image img{
+        right: 0rem;
+    }
+    section.banner main div.description{
+        left: 1rem;
+    }
+}
+
+@media (max-width: 817px){
+    nav.navbar{
+        background-color: var(--secondary-color);
+        height: 8rem;
+    }
+    nav.navbar .profpix span.profimage{
+        position: relative;
+        top: 0px;
+        left: -1rem;
+        display: block;
+    }
+    nav.navbar span.profimage img{
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
+        border-radius: 50%;
+        border: 3px solid var(--primary-color, );
+        box-shadow: 0px 0px 12px white;
+    }
+    nav.navbar .profpix{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: .5rem;
+       
+    }
+    nav.navbar .profpix .profileName{
+        margin-left: 1rem;
+        margin-top: 0rem;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0px 0px 7px var(--primary-color);
+    }
+    nav.navbar .navlinks{
+        display: none;
+    }
+    nav.navbar span.menubar{
+        margin-top: 0rem;
+        display: inline-block;
+        font-size: 30px;
+        color: white;
+        transform: translateX(10px);
+        transform: translateY(-10px);
+
+    }
+
+    section.banner main div.image img{
+        display: none;
+    }
+    section.banner main div.description{
+        top: 9rem;
+        left: 0;
+        text-align: center;
+    }
+    section.banner main div.description h1{
+        font-size: 30px;
+        
+    }
+    section.banner main div.description h2{
+        text-shadow: 0px 0px 3px var(--primary-color);
+        font-size: 30px;
+    }
+    section.banner main div.description .getintouch{
+        position: relative;
+        top: 3rem;
+    }
+    section.banner main div.description .getintouch a{
+        font-size: 18px;
+    }
+    section.banner main div.description p{
+        width: 100% !important;
+        margin-top: 2rem;
+        line-height: 1.5rem;
+    }
+}
+
