@@ -118,7 +118,6 @@ section main div.description h2{
 section main div.description div.getintouch{
     position: absolute;
     bottom: 0rem;
-
 }
 section.banner main div.image img{
     position: absolute;
@@ -129,56 +128,57 @@ section.banner main div.image img{
 }
 div.projects{
     position: relative;
-    overflow-X: hidden;
-    height: 80vh;
-    width: 100%;
+    height: 90vh;
     background-color: rgb(80, 79, 79);
     display: grid;
-    grid-template-columns: 1fr;
-    place-items: center;
     color: white;
-    font-family: Roboto;
+    font-family: Tektur;
+
 }
 div.projects div.projectImages{
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: nowrap;
-    width: 80%;
-    height: 40vh;
-    transform: translateY(-40px);
-    overflow-x: hidden;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    height: 65vh;
+    transform: translateY(30px);
+    overflow: hidden;
+    justify-self: center;
 }
 div.projects span{
     position: absolute;
     display: flex;
     justify-content: space-between;
-    width: 85%;
+    width: 80%;
     margin-top: 6rem;
     font-size: 2rem;
     color: rgb(89, 255, 47);
     text-shadow: 0px 0px 3px white;
+    justify-self:  center;
+    transform: translateY(14rem)
 }
 div.projects h1{
     position: relative;
-    top: 1rem;
+    text-align: center;
+    top: 3rem;
     font-size: 2.5rem;
     text-shadow: 0px 0px 3px rgb(89, 255, 47);
 }
 div.projects div.projectImages a img{
-    width: 15rem;
-    height: 12rem;
+    width: 19rem;
+    height: 10rem;
     display: flex;
-    margin: 0px 10px;
+    margin: 8px 15px;
     border: 2px solid rgb(89, 255, 47);
     box-shadow: 0px 0px 3px white;
 }
 div.about{
     position: relative;
     height: 80vh;
+    width: 100%;
     padding: 3rem 6rem;
-
 }
 div.about h1{
     width: 100%;
@@ -188,19 +188,16 @@ div.about h1{
     font-size: 3rem;
     color: var(--background-color);
     text-shadow: 0px 0px 3px var(--primary-color);
-    
 }
-div.about div.getintouch{
-    position: absolute;
-    bottom: 3rem;
+div.about main{
+    height: 40vh;
 }
 div.contacts{
     position: relative;
     width: 100%;
-    height: 80vh;
-    border-radius: 8px;
-    align-self: center;
-    padding: 3rem ;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
     background-color: rgb(234, 238, 235);
 }
 div.contacts h1{
@@ -211,9 +208,7 @@ div.contacts p{
     text-align: center;
     padding-bottom: 1rem;
 }
-
 div.contacts .contactForm{
-    position: relative;
     padding: 0px 3rem;
     margin-top: 1rem;
 }
@@ -244,7 +239,7 @@ div.inp input:focus{
 }
 div.msg{
     position: relative;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 div.msg textarea{
@@ -268,8 +263,8 @@ div.form .msginputs, input{
 }
 div.contactForm div.getintouch{
     position: absolute;
-    bottom: 1rem;
-    left: 5rem;
+    bottom: 3rem;
+    left: 5.5rem;
     width: 70%;
 }
 div.contactForm div.getintouch a{
@@ -279,19 +274,21 @@ div.contactForm div.getintouch a{
 div.form div#msginputs:focus{
     outline: none;
 }
+
 div.footer{
     width: 100%;
-    height: 20vh;
+    height: 30vh;
     background-color:  var(--background-color);
+
 }
 
-@media (max-width: 1012px ){
+@media (max-width: 1024px ){
     section.banner main div.image img{
         right: 0rem;
     }
     section.banner main div.description{
         left: 1rem;
-    }
+    }   
 }
 
 @media (max-width: 817px){
@@ -368,6 +365,77 @@ div.footer{
         width: 100% !important;
         margin-top: 2rem;
         line-height: 1.5rem;
+    }
+    
+    div.projects .projectImages{
+        overflow-X: scroll !important;
+        flex-direction: column;
+        height: 19rem !important;
+        max-width: 21rem;
+        background-color: var(--secondary-color);
+        
+    }
+    div.projects .projectImages div a img{
+        height: 14rem;
+        width: 19rem;
+    }
+    div.projects span.icons i{
+        display: none !important;
+    }
+
+    div.contactForm .form{
+        flex-direction: column;
+        height: 60vh;
+     }
+     div.contactForm .form .inp{
+        justify-self: center;
+        align-items: center;
+        width: 100%;
+        height: 7rem;
+     }
+     div.contactForm .form .msg{
+        width: 100%;
+        height: 35vh;
+        padding: 2rem 22px;
+     }
+     div.contactForm div.getintouch{
+        margin-left: 16px
+     }
+     div.getintouch a{
+        font-size: 18px !important;
+     }
+}
+@media (max-width: 577px){
+    div.projects .projectImages div a img{
+        height: 14rem;
+        width: 15rem;
+    }
+
+    div.about{
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    div.contactForm .form{
+        padding: 0px;
+    }
+    div.contactForm {
+        width: 100vw;
+        padding: 0px 0px !important;
+    }
+    div.contacts p{
+        padding: 0px 20px 10px;
+    }
+    div.contactForm div.getintouch{
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 90%;
+        margin-bottom: 0rem;
     }
 }
 
