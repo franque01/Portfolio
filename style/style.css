@@ -386,21 +386,27 @@ div.footer{
     div.projects span.icons i{
         display: none !important;
     }
-
+    div.contacts{
+        min-height: 680px;
+    }
     div.contactForm .form{
         flex-direction: column;
-        height: 60vh;
+        height: 520px;
      }
      div.contactForm .form .inp{
         justify-self: center;
         align-items: center;
         width: 100%;
-        height: 7rem;
+        height: 9rem;
+     }
+     div.contactForm .form .inp input{
+        margin-bottom: 1.2rem;
      }
      div.contactForm .form .msg{
         width: 100%;
-        height: 35vh;
-        padding: 2rem 22px;
+        height: 300px;
+        padding: 1rem 22px ;
+        margin-bottom: 1rem;
      }
      div.contactForm div.getintouch{
         margin-left: 16px
@@ -424,11 +430,21 @@ div.footer{
         transition: right .5s ease;
         font-family: Roboto;
      }
-     
+     div.navlinks span.name{
+        position: absolute;
+        top: 2.8rem;
+        left: 2.2rem;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: roboto;
+        color: var(--primary-color);
+        text-shadow: 0px 0px 2px white
+     }
      nav.navbar div.navlinks a{
        padding: 1rem;
        margin-bottom: 2rem;
        width: 50vw;
+       transform: translateY(2rem);
      }
      nav.navbar div.navlinks a.active{
         padding: 16px;
@@ -446,7 +462,7 @@ div.footer{
     span.closebar{
         font-size: 20px;
         position: absolute;
-        top: 3rem;
+        top: 2.5rem;
         right: 2rem !important;
         border-radius: 50%;
         background-color: var(--background-color);
