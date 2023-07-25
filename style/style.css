@@ -427,6 +427,7 @@ div.footer{
         flex-direction: column;
         padding: 7rem 4rem;
         transition: all 1s ease;
+        font-family: Roboto;
      }
      
      nav.navbar div.navlinks a{
