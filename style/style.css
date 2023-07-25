@@ -417,7 +417,7 @@ div.footer{
      nav.navbar div.navlinks{
         position: fixed;
         top: 0;
-        right: -2%;
+        right: -100%;
         background-color: var(--secondary-color);
         width: 90vw;
         height: 100vh;
