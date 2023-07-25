@@ -46,6 +46,9 @@ nav.navbar .profpix .profileName{
     display: inline-block;
     top: 0;
 }
+nav.navbar div.navlinks span.closebar{
+    display: none;
+}
 nav.navbar div.navlinks a{
     text-decoration: none;
     color: white;
@@ -423,7 +426,9 @@ div.footer{
         display: flex;
         flex-direction: column;
         padding: 7rem 4rem;
+        transition: all 1s ease;
      }
+     
      nav.navbar div.navlinks a{
        padding: 1rem;
        margin-bottom: 2rem;
@@ -439,16 +444,19 @@ div.footer{
         margin-bottom: 31px;
         transition: all 0.2s ease;
      }
+    span.closebar{
+        display: inline-block !important;
+    }
      span.closebar{
         font-size: 20px;
         position: absolute;
         top: 3rem;
-        right: 3.2rem;
+        right: 3.5rem !important;
         border-radius: 50%;
         background-color: var(--background-color);
         width: 2rem;
         height: 2rem;
-        display: flex;
+        display: flex !important;
         align-items: center;
         justify-content: center;
         color: var(--primary-color)
