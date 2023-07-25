@@ -29,13 +29,10 @@ nav.navbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 1rem;
+    padding-right: 3rem;
     background-color: var(--secondary-color);
     color: white;
     z-index: 1;
-}
-nav.navbar{
-    padding-right: 3rem;
 }
 nav.navbar .profpix .profileName{
     font-size: 30px;
@@ -301,6 +298,7 @@ div.footer{
     nav.navbar{
         background-color: var(--secondary-color);
         height: 8rem;
+        padding: 0px 24px 0px 12px;
     }
     nav.navbar .profpix span.profimage{
         position: relative;
@@ -340,13 +338,10 @@ div.footer{
         display: block;
         font-size: 30px;
         color: white;
-        transform: translateX(10px);
         transform: translateY(-10px);
-    }
-    div.landpge nav.navbar span.menubar:hover label i{
         cursor: pointer;
+        
     }
-
     section.banner main div.image img{
         display: none;
     }
@@ -448,11 +443,11 @@ div.footer{
     span.closebar{
         display: inline-block !important;
     }
-     span.closebar{
+    span.closebar{
         font-size: 20px;
         position: absolute;
         top: 3rem;
-        right: 3.2rem !important;
+        right: 2rem !important;
         border-radius: 50%;
         background-color: var(--background-color);
         width: 2rem;
@@ -461,7 +456,7 @@ div.footer{
         align-items: center;
         justify-content: center;
         color: var(--primary-color)
-     }
+    }
 }
 @media (max-width: 577px){
     div.projects .projectImages div a img{
