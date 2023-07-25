@@ -1,0 +1,490 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Montserrat+Alternates:ital,wght@0,400;0,500;1,300&family=Open+Sans:ital,wght@0,500;0,600;1,600&family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&family=Tektur:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: Roboto;
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: rgb(89, 255, 47);
+    --secondary-color: rgb(108, 117, 107);
+    --background-color: rgb(83, 88, 83);
+}
+textarea{
+    resize: none;
+}
+div.landpge{
+    height: 100vh;
+    width: 100%;
+    overflow-X: hidden;
+}
+nav.navbar .profpix span.profimage{
+    display: none;
+}
+nav.navbar{
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 1rem;
+    background-color: var(--secondary-color);
+    color: white;
+    z-index: 1;
+}
+nav.navbar{
+    padding-right: 3rem;
+}
+nav.navbar .profpix .profileName{
+    font-size: 30px;
+    font-family: Tektur;
+    color:rgb(53, 253, 3);
+    font-weight: 800;
+    margin-left: 3rem;
+    display: inline-block;
+    top: 0;
+}
+nav.navbar div.navlinks a{
+    text-decoration: none;
+    color: white;
+    background-color:  var(--background-color);
+    padding: 5px 8px;
+    border-radius: 8px;
+    margin: 0px 6px;
+}
+nav.navbar div.navlinks a:last-child{
+    background-color: rgb(89, 255, 47);
+    color: var(--background-color);
+    font-size: 14px;
+}
+nav.navbar div.navlinks a:last-child:hover{
+    color: rgb(54, 54, 54);
+}
+nav.navbar div.navlinks a:hover{
+    box-sizing: border-box;
+    color: greenyellow;
+    border: 1px solid white;
+    padding: 4px 7px;
+    box-shadow: 0px 0px 3px white;
+}
+nav.navbar div.navlinks a.active{
+    box-sizing: border-box;
+    color: greenyellow;
+    border: 1px solid white;
+    padding: 4px 7px;
+    box-shadow: 0px 0px 3px white;
+}
+nav.navbar span.menubar{
+    display: none;
+    cursor: pointer;
+}
+
+div.getintouch a{
+    text-decoration: none;
+    color: rgb(89, 255, 47);
+    border: 2px solid rgb(89, 255, 47);
+    background-color:  rgb(83, 88, 83);
+    border-radius: 8px;
+    padding: 5px 8px;
+    font-size: 22px;
+
+}
+div.getintouch a:hover{
+    text-shadow: 0px 0px 1px white;
+    box-shadow: 0px 0px 5px rgb(53, 253, 3);
+}
+section main div.description{
+    position: relative;
+    top: 9rem;
+    left: 3rem;
+    padding: 3rem;
+    min-height: 60vh;
+    width: 100%;
+}
+
+section main div.description h1{
+    font-size: 55px;
+    font-weight: 700;
+    font-family: Roboto;
+    color: rgb(80, 79, 79);
+}
+section main div.description h2{
+    font-family: Tektur;
+    font-size: 40px;
+    color: rgb(23, 24, 23);
+    margin: 20px 0px;
+}
+section main div.description div.getintouch{
+    position: absolute;
+    bottom: 0rem;
+}
+section.banner main div.image img{
+    position: absolute;
+    bottom: 0px;
+    right: 7rem;
+    width: 26rem;
+    z-index: -1;
+}
+div.projects{
+    position: relative;
+    height: 90vh;
+    background-color: rgb(80, 79, 79);
+    display: grid;
+    color: white;
+    font-family: Tektur;
+
+}
+div.projects div.projectImages{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 70vw;
+    height: 65vh;
+    transform: translateY(30px);
+    overflow: hidden;
+    justify-self: center;
+}
+div.projects span{
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin-top: 6rem;
+    font-size: 2rem;
+    color: rgb(89, 255, 47);
+    text-shadow: 0px 0px 3px white;
+    justify-self:  center;
+    transform: translateY(14rem)
+}
+div.projects h1{
+    position: relative;
+    text-align: center;
+    top: 3rem;
+    font-size: 2.5rem;
+    text-shadow: 0px 0px 3px rgb(89, 255, 47);
+}
+div.projects div.projectImages a img{
+    width: 19rem;
+    height: 10rem;
+    display: flex;
+    margin: 8px 15px;
+    border: 2px solid rgb(89, 255, 47);
+    box-shadow: 0px 0px 3px white;
+}
+div.about{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    padding: 3rem 6rem;
+}
+div.about h1{
+    width: 100%;
+    height: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: var(--background-color);
+    text-shadow: 0px 0px 3px var(--primary-color);
+}
+div.about main{
+    height: 40vh;
+}
+div.contacts{
+    position: relative;
+    width: 100%;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(234, 238, 235);
+}
+div.contacts h1{
+    text-align: center;
+    padding: 3rem;
+}
+div.contacts p{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+div.contacts .contactForm{
+    padding: 0px 3rem;
+    margin-top: 1rem;
+}
+div.contactForm .form{
+    display: flex;
+    padding: 0px 2rem;
+    height: 35vh;
+ }
+div.inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: self-start;
+    width: 50%;
+    height: 60%;
+    margin-top: 5px;
+}
+div.inp input{
+    border-radius: 3px;
+    width: 90%;
+    height: 3rem;
+    padding: 0px 6px;
+    border-radius: 5px;
+}
+div.inp input:focus{
+    outline: none;
+    border: 2px solid rgb(53, 253, 3);
+}
+div.msg{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+div.msg textarea{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(53, 253, 3);
+    padding: 8px; 
+    font-size: 14px;
+    border-radius: 5px;
+}
+div.msg textarea:focus{
+    outline: none;
+    border: 2px solid rgb(53, 253, 3);
+}
+div.form .msginputs, input{
+    border: 2px solid #ccc;
+    box-shadow: 0px 0px 3px white;
+    font-size: 16px;
+    font-family: poppins;
+    color:rgb(54, 54, 54);
+}
+div.contactForm div.getintouch{
+    position: absolute;
+    bottom: 3rem;
+    left: 5.5rem;
+    width: 70%;
+}
+div.contactForm div.getintouch a{
+    font-size: 18px;
+    padding: 8px 15px;
+}
+div.form div#msginputs:focus{
+    outline: none;
+}
+
+div.footer{
+    width: 100%;
+    height: 30vh;
+    background-color:  var(--background-color);
+
+}
+
+
+
+@media (max-width: 1024px ){
+    section.banner main div.image img{
+        right: 0rem;
+    }
+    section.banner main div.description{
+        left: 1rem;
+    }   
+}
+
+@media (max-width: 817px){
+    nav.navbar{
+        background-color: var(--secondary-color);
+        height: 8rem;
+    }
+    nav.navbar .profpix span.profimage{
+        position: relative;
+        top: 0px;
+        left: -1rem;
+        display: block;
+    }
+    nav.navbar span.profimage img{
+        width: 5rem;
+        height: 5rem;
+        margin-left: 1rem;
+        border-radius: 50%;
+        border: 3px solid var(--primary-color, );
+        box-shadow: 0px 0px 12px white;
+    }
+    nav.navbar .profpix{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: .5rem;
+       
+    }
+    nav.navbar .profpix .profileName{
+        margin-left: 1rem;
+        margin-top: 0rem;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0px 0px 7px var(--primary-color);
+    }
+    nav.navbar .navlinks{
+        display: none;
+    }
+    div.landpge nav.navbar span.menubar{
+        position: relative;
+        margin-top: 0rem;
+        display: block;
+        font-size: 30px;
+        color: white;
+        transform: translateX(10px);
+        transform: translateY(-10px);
+    }
+    div.landpge nav.navbar span.menubar:hover label i{
+        cursor: pointer;
+    }
+
+    section.banner main div.image img{
+        display: none;
+    }
+    section.banner main div.description{
+        top: 8rem;
+        left: 0;
+        text-align: center;
+    }
+    section.banner main div.description h1{
+        font-size: 30px;
+        
+    }
+    section.banner main div.description h2{
+        text-shadow: 0px 0px 3px var(--primary-color);
+        font-size: 30px;
+    }
+    section.banner main div.description .getintouch{
+        position: relative;
+        top: 3rem;
+    }
+    section.banner main div.description .getintouch a{
+        font-size: 18px;
+    }
+    section.banner main div.description p{
+        width: 100% !important;
+        margin-top: 2rem;
+        line-height: 1.5rem;
+    }
+    
+    div.projects .projectImages{
+        overflow-X: scroll !important;
+        flex-direction: column;
+        height: 19rem !important;
+        max-width: 21rem;
+        background-color: var(--secondary-color);
+        
+    }
+    div.projects .projectImages div a img{
+        height: 14rem;
+        width: 19rem;
+    }
+    div.projects span.icons i{
+        display: none !important;
+    }
+
+    div.contactForm .form{
+        flex-direction: column;
+        height: 60vh;
+     }
+     div.contactForm .form .inp{
+        justify-self: center;
+        align-items: center;
+        width: 100%;
+        height: 7rem;
+     }
+     div.contactForm .form .msg{
+        width: 100%;
+        height: 35vh;
+        padding: 2rem 22px;
+     }
+     div.contactForm div.getintouch{
+        margin-left: 16px
+     }
+     div.getintouch a{
+        font-size: 18px !important;
+     }
+
+     nav.navbar div.navlinks{
+        position: fixed;
+        top: 0;
+        right: -2%;
+        background-color: var(--secondary-color);
+        width: 90vw;
+        height: 100vh;
+        z-index: 10;
+        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        padding: 7rem 4rem;
+     }
+     nav.navbar div.navlinks a{
+       padding: 1rem;
+       margin-bottom: 2rem;
+       width: 35vw;
+     }
+     nav.navbar div.navlinks a.active{
+        padding: 16px;
+        margin-bottom: 2rem;
+        
+      }
+     nav.navbar div.navlinks a:hover{
+        padding: 15px;
+        margin-bottom: 31px;
+        transition: all 0.2s ease;
+     }
+     span.closebar{
+        font-size: 20px;
+        position: absolute;
+        top: 3rem;
+        right: 3.2rem;
+        border-radius: 50%;
+        background-color: var(--background-color);
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--primary-color)
+     }
+}
+@media (max-width: 577px){
+    div.projects .projectImages div a img{
+        height: 14rem;
+        width: 15rem;
+    }
+
+    div.about{
+        width: 100%;
+        padding: 1rem 2rem;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    div.contactForm .form{
+        padding: 0px;
+    }
+    div.contactForm {
+        width: 100vw;
+        padding: 0px 0px !important;
+    }
+    div.contacts p{
+        padding: 0px 20px 10px;
+    }
+    div.contactForm div.getintouch{
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+        width: 90%;
+        margin-bottom: 0rem;
+    }
+}
+
