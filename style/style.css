@@ -426,14 +426,14 @@ div.footer{
         display: flex;
         flex-direction: column;
         padding: 7rem 4rem;
-        transition: all 1s ease;
+        transition: right .5s ease;
         font-family: Roboto;
      }
      
      nav.navbar div.navlinks a{
        padding: 1rem;
        margin-bottom: 2rem;
-       width: 35vw;
+       width: 50vw;
      }
      nav.navbar div.navlinks a.active{
         padding: 16px;
@@ -452,7 +452,7 @@ div.footer{
         font-size: 20px;
         position: absolute;
         top: 3rem;
-        right: 3.5rem !important;
+        right: 3.2rem !important;
         border-radius: 50%;
         background-color: var(--background-color);
         width: 2rem;
